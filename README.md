@@ -1,107 +1,28 @@
 **Restaurant Website API Project**
 
-**Overview**
-This project serves as a RESTful API solution for a restaurant website, developed using .NET 7.
-
-
-Restaurant Website API Project
-
-Overview
-This project serves as a RESTful API solution for a restaurant website, developed using .NET 7.
-
-
-Prerequisites
-To run this project, the following prerequisites are required:
-
+**Overview:**
+This project is a REST API for a restaurant website developed using .NET 7.
+Prerequisites:
 .NET 7
+Visual Studio 2022 or higher
+SQL Server (for creating the database with Code First approach)
 
-Visual Studio 2022 or a newer version
+**Key Features:**
+**Client-side:** JavaScript
+Password strength verification using the Zxcvbn package during user registration
+Follows REST API architecture principles
+Implementation of layered architecture for code organization
+Dependency injection for encapsulation and ease of operation
+Utilization of async/await for scalability
+Data-First approach with Entity Framework (EF) for object-oriented data handling
+Monitoring database operations using the PROFILER professional tool
+Documentation with SWAGGER for better project understanding
+Usage of Data Transfer Object (DTO) entities for client-specific data return
+AutoMapper library for object-to-DTO object mapping
+Configuration file for storing code parameters like connection strings
+Logging of information data to files and email alerts to managers in case of errors using the LOGGER library
+Middleware implementation for error handling across all layers
+Middleware for logging important user entry data
 
-SQL Server for creating the database using the Code First approach
-
-
-Key Features
-Utilizes client-side JavaScript for interactive features
-
-Implements password strength verification using the Zxcvbn package during user registration
-
-Adheres to REST API architecture principles for robustness
-
-Implements layered architecture for streamlined code organization
-
-Deploys dependency injection for encapsulation and operational smoothness
-
-Employ async/await for enhanced scalability
-
-Adopts a Data-First approach with Entity Framework (EF) for managing object-oriented data
-
-Monitors database operations effectively using the PROFILER tool
-
-Benefits from enhanced project understanding with documentation through SWAGGER
-
-Utilizes Data Transfer Object (DTO) entities for tailored client-specific data delivery
-
-Employs AutoMapper for seamless object-to-DTO mapping
-
-Manages code parameters efficiently with a dedicated configuration file for connection strings
-
-Implements logging capabilities for informational data storage and sends email alerts to managers in case of errors leveraging the LOGGER library
-
-Middleware implementation provides comprehensive error handling across all layers
-
-Dedicated middleware ensures logging of critical user entry data
-
-
-Usage
-Feel free to explore and make use of our API project!
-
-
-
-This revised README provides a more user-friendly, structured, and informative overview of the Restaurant Website API Project while maintaining a focus on technical details and software development concepts.
-To run this project, the following prerequisites are required:
-
-.NET 7
-
-Visual Studio 2022 or a newer version
-
-SQL Server for creating the database using the Code First approach
-
-
-Key Features
-Utilizes client-side JavaScript for interactive features
-
-Implements password strength verification using the Zxcvbn package during user registration
-
-Adheres to REST API architecture principles for robustness
-
-Implements layered architecture for streamlined code organization
-
-Deploys dependency injection for encapsulation and operational smoothness
-
-Employ async/await for enhanced scalability
-
-Adopts a Data-First approach with Entity Framework (EF) for managing object-oriented data
-
-Monitors database operations effectively using the PROFILER tool
-
-Benefits from enhanced project understanding with documentation through SWAGGER
-
-Utilizes Data Transfer Object (DTO) entities for tailored client-specific data delivery
-
-Employs AutoMapper for seamless object-to-DTO mapping
-
-Manages code parameters efficiently with a dedicated configuration file for connection strings
-
-Implements logging capabilities for informational data storage and sends email alerts to managers in case of errors leveraging the LOGGER library
-
-Middleware implementation provides comprehensive error handling across all layers
-
-Dedicated middleware ensures logging of critical user entry data
-
-
-Usage
-Feel free to explore and make use of our API project!
-
-
-
-This revised README provides a more user-friendly, structured, and informative overview of the Restaurant Website API Project while maintaining a focus on technical details and software development concepts.
+Usage:
+Enjoy exploring and using our API project!
