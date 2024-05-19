@@ -1,7 +1,9 @@
 **Restaurant Website API Project**
 
 **Overview:**
+
 This project is a REST API for a restaurant website developed using .NET 7.
+
 **Prerequisites:**
 * .NET 7
 * Visual Studio 2022 or higher
@@ -22,5 +24,7 @@ This project is a REST API for a restaurant website developed using .NET 7.
 * Logging of information data to files and email alerts to managers in case of errors using the LOGGER library
 * Middleware implementation for error handling across all layers
 * Middleware for logging important user entry data
+* 
 **Usage:**
+  
 **Enjoy exploring and using our API project!**
