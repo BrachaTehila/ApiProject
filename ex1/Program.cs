@@ -1,17 +1,11 @@
-using Entities;
-using Repository;
-using Service;
-using ex1.Controllers;
+using ex1.middleware;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using NLog.Web;
 using PresidentsApp.Middlewares;
-using ex1.middleware;
+using Repository;
+using Service;
 
 var builder = WebApplication.CreateBuilder(args);
-
-
-// Add services to the container.
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
@@ -45,12 +39,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Configure the HTTP request pipeline.
-
 app.UseErrorHandlingMiddleware();
 
 app.UseRatingMiddleware();
-
 
 app.UseHttpsRedirection();
 
