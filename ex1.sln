@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entiti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{4B71F40E-C6D5-437B-9691-76EF0953E68C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{6EEC939B-9761-4745-B04C-3CB4FBD81C3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTO", "DTO\DTO.csproj", "{6EEC939B-9761-4745-B04C-3CB4FBD81C3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{DD39579E-CDAD-4B7D-9F2C-C4FC99C2EF87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{6EEC939B-9761-4745-B04C-3CB4FBD81C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EEC939B-9761-4745-B04C-3CB4FBD81C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EEC939B-9761-4745-B04C-3CB4FBD81C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD39579E-CDAD-4B7D-9F2C-C4FC99C2EF87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD39579E-CDAD-4B7D-9F2C-C4FC99C2EF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD39579E-CDAD-4B7D-9F2C-C4FC99C2EF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD39579E-CDAD-4B7D-9F2C-C4FC99C2EF87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
