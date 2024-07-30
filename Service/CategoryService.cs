@@ -11,14 +11,14 @@ namespace Service
 {
     public class CategoryService : ICategoryService
     {
-        private ICategoryRepository repository;
+        private ICategoryRepository _repository;
         public CategoryService(ICategoryRepository repository)
         {
-            this.repository = repository;
+            _repository = repository;
         }
         public async Task<IEnumerable<Category>> getAllCategories()
         {
-            return await repository.getAllCategories();
+            return await _repository.getAllCategories();
 
         }
 

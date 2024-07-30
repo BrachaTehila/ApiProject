@@ -10,15 +10,18 @@ namespace Repository
 {
     public class OrderRepository : IOrderRepository
     {
-        private StoreDataBase2Context dbContext;
+
+        private StoreDataBase2Context _dbContext;
+
         public OrderRepository(StoreDataBase2Context dbContext)
         {
-            this.dbContext = dbContext;
+            _dbContext = dbContext;
         }
+
         public async Task<OrdersTbl> addNewOrder(OrdersTbl newOrder)
         {
-            await dbContext.OrdersTbls.AddAsync(newOrder);
-            await dbContext.SaveChangesAsync();
+            await _dbContext.OrdersTbls.AddAsync(newOrder);
+            await _dbContext.SaveChangesAsync();
             return newOrder;
 
 

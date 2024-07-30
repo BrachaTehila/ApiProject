@@ -10,14 +10,14 @@ namespace Repository
 {
     public class CategoryRepository : ICategoryRepository
     {
-        private  StoreDataBase2Context dbContext;
+        private  StoreDataBase2Context _dbContext;
         public CategoryRepository(StoreDataBase2Context dbContext)
         {
-            this.dbContext = dbContext;
+            _dbContext = dbContext;
         }
         public async Task<IEnumerable<Category>> getAllCategories()
         {
-            return await dbContext.Categories.ToListAsync();
+            return await _dbContext.Categories.ToListAsync();
 
         }
 

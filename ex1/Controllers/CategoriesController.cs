@@ -3,9 +3,6 @@ using DTO;
 using Entities;
 using Microsoft.AspNetCore.Mvc;
 using Service;
-using System.Collections.Generic;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ex1.Controllers
 {
@@ -13,23 +10,22 @@ namespace ex1.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        private readonly IMapper mapper;
-        private ICategoryService service;
+
+        private readonly IMapper _mapper;
+        private ICategoryService _service;
+
         public CategoriesController(ICategoryService service, IMapper mapper)
         {
-            this.service = service;
-            this.mapper = mapper;
+            _service = service;
+            _mapper = mapper;
         }
-        // GET: api/<CategoriesController>
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoriesDTO>>> Get()
         {
-
-           IEnumerable <Category > categoriesList= await service.getAllCategories();
-           IEnumerable<CategoriesDTO> categoriesListDTO = mapper.Map<IEnumerable<Category>, IEnumerable<CategoriesDTO>>(categoriesList);
+            IEnumerable<Category> categoriesList = await _service.getAllCategories();
+            IEnumerable<CategoriesDTO> categoriesListDTO = _mapper.Map<IEnumerable<Category>, IEnumerable<CategoriesDTO>>(categoriesList);
             return Ok(categoriesListDTO);
         }
-
-     
     }
 }

@@ -12,15 +12,16 @@ namespace Service
 {
     public class ProductService : IProductService
     {
-        private IProductRepository repository;
+
+        private IProductRepository _repository;
         public ProductService(IProductRepository repository)
         {
-            this.repository = repository;
+            _repository = repository;
         }
 
         public async Task<IEnumerable<Product>> getAllProduct( string? desc, int? minPrice, int? maxPrice, int?[] categoriesId)
         {
-            return await repository.getAllProduct(   desc,  minPrice,  maxPrice,categoriesId);
+            return await _repository.getAllProduct(   desc,  minPrice,  maxPrice,categoriesId);
         }
    
 
